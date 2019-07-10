@@ -17,7 +17,9 @@ class PostListView(ListView):
     template_name = 'blog/blog.html'
     queryset = Post.objects.all()
 
-class ****(DetailView):
+class BlogDetailView(DetailView):
+    template_name = 'blog/post.html'
+    queryset = Post.objects.all()
 
 
 
